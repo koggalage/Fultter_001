@@ -18,13 +18,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: IconButton(
-            color: Colors.blue,
-            onPressed: () {
-             // print('IconButton pressed!'); // Prints text to console
-            },
-            icon: const Icon(Icons.alternate_email))
+      body: const Padding(
+          padding: EdgeInsets.all(90.0),
+          child: Text('Hello!')
+      ),
+      // Container(
+      //   //padding: const EdgeInsets.all(20.0),
+      //   //padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+      //   padding: const EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+      //   margin: const EdgeInsets.all(30.0),
+      //   color: Colors.grey[400],
+      //   child: const Text('Hello!')
+      // ),
+
+
+      // Center(
+      //   child: IconButton(
+      //       color: Colors.blue,
+      //       onPressed: () {
+      //        // print('IconButton pressed!'); // Prints text to console
+      //       },
+      //       icon: const Icon(Icons.alternate_email))
         // child: TextButton.icon(
         //   onPressed: () {
         //   },
@@ -57,7 +71,7 @@ class Home extends StatelessWidget {
         //   ),
         // ),
 
-      ),
+      //),
       floatingActionButton: FloatingActionButton(
         onPressed: AboutDialog.new,
         backgroundColor: Colors.red[600],
